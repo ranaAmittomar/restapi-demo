@@ -1,8 +1,15 @@
 package com.firstspring.restapidemo.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 //this is model class,where we are define like which are the attributes (ids) we'll use when creating
 //JSON for RestAPI, because we know,RestAPI works with JSON format.The CRUD works in JSON format.
+@Entity //making this entity , and we'll be using it to create db.
+@Table(name = "cloud_vendor_info")    //creating a table from here
 public class CloudVendor {
+    @Id
     private String vendorId;
     private String vendorName;
     private String vendorAddress;
