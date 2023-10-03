@@ -1,5 +1,7 @@
 package com.firstspring.restapidemo.model;
 
+//this is model class,where we are define like which are the attributes (ids) we'll use when creating
+//JSON for RestAPI, because we know,RestAPI works with JSON format.The CRUD works in JSON format.
 public class CloudVendor {
     private String vendorId;
     private String vendorName;
